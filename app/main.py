@@ -17,6 +17,7 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "https://nms-live.vercel.app",
         "https://nms-india-mcov.vercel.app",
+        "https://nms-server-production.up.railway.app",
         "http://localhost:3000"    # If React
     ],
     allow_credentials=True,
