@@ -13,13 +13,14 @@ app = FastAPI(title=settings.APP_NAME)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",   # Vite default
-        "http://127.0.0.1:5173",
-        "http://127.0.0.1:5174",
-        "https://nms-live.vercel.app",
-        "https://nms-india-mcov.vercel.app",
-        "https://nms-server-production.up.railway.app",
-        "http://localhost:3000"    # If React
+        # "http://localhost:5173",   # Vite default
+        # "http://127.0.0.1:5173",
+        # "http://127.0.0.1:5174",
+        # "https://nms-live.vercel.app",
+        # "https://nms-india-mcov.vercel.app",
+        # "https://nms-server-production.up.railway.app",
+        # "http://localhost:3000"    # If React
+        "*"
     ],
     allow_credentials=True,
     allow_methods=["*"],
